@@ -3,7 +3,7 @@ export const ELEMENTS = {
     btnBusca: '#search',
     btnLead: '.lead',
     btnLeadenviar: '.lead__submit',
-    btnconfLead: '.action-primary action-accept',
+    btnconfLead: '.action-primary',
 
     //Alerts
     alertMsg: '.result__message_title strong',

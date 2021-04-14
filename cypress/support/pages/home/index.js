@@ -31,10 +31,7 @@ class Home {
         cy.get(el.btnLeadenviar).click()
         cy.get(el.alertMsgleadtitulo)
         .contains('Recebemos as suas informações. Muito obrigado!')
-        cy.get(el.alertMsglead)
-        .contains('Recebemos as suas informações. Muito obrigado!')
-        cy.get(el.alertMsglead)
-        .contains('Em breve entraremos em contato.')
+        cy.get(el.alertMsglead).eq(1).contains('Em breve entraremos em contato.')
         cy.get(el.btnconfLead).click()
     }
 
