@@ -21,4 +21,7 @@ import './commands'
 
 beforeEach (() => {
     cy.server();
+    cy.viewport(1240, 800);
 });
+
+
