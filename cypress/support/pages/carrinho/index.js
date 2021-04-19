@@ -31,7 +31,7 @@ class Carrinho {
     cy.get(e.btnRange)
     .should('be.visible').and('be.enabled')
     .click();
-
+    cy.wait(2000)
     //cy.get('#modal-content__qty').click();
     }
 }

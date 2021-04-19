@@ -20,7 +20,7 @@ import './commands'
 // require('./commands')
 
 beforeEach (() => {
-    //scy.server();
+    cy.server();
     cy.viewport(1240, 800);
 });
 
