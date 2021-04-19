@@ -14,5 +14,10 @@ describe ('Validar Carrinho', () => {
         Carrinho.acessarProdutocombo();
         Carrinho.inserirProdutocarrinhocombo(); 
     });
+    it('Acessar um carrinho com sucesso range', () => {
+        //Acessando produto
+        Carrinho.acessarProdutorange();
+        Carrinho.inserirProdutocarrinhorange(); 
+    });
     
 })

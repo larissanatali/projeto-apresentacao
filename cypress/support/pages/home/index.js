@@ -20,16 +20,17 @@ class Home {
         cy.get(el.btnBusca)
         .type('Secretaria Digital by doc.Xpress{enter}')
         cy.contains('h2', 'Secretaria Digital by doc.Xpress').click()
-        cy.get(el.btnLead).should('be.visible').click()
+        cy.wait(5000)
+        .get(el.btnLead)
+        .should('be.visible')
+        .click()
     }
     realizarLeaddadosbrancos() {
         cy.get(el.formLead).should('be.visible')
         cy.get(el.btnLeadenviar).should('be.visible').click()
-        cy.get(el.alertNamelead).contains('Este é um campo obrigatório.')
-        cy.get(el.alertEmaillead).contains('Este é um campo obrigatório.')
-        cy.get(el.alertCelularlead).contains('Este é um campo obrigatório.')
-        cy.get(el.alertAssuntolead).contains('Este é um campo obrigatório.')
-        cy.get(el.btnFechalead).eq(1).click()
+        cy.get(el.formLead).find('.mage-error').should('have.length', 8)
+        cy.contains('Este é um campo obrigatório.').should('have.length', 1)
+        cy.get(el.btnFechalead).first('be.visible').click()
     }
     realizarLead() {
         cy.get(el.lbnLeadname).type('Teste Lead')

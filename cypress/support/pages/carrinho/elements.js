@@ -1,6 +1,7 @@
 export const ELEMENTS = {
     //Buttons
         btnBundle: '#bundle-slide',
+        btnRange: '.bundle-range',
         btnAdicinacarrinho: '#product-addtocart-button',
     //Alerts
 
@@ -9,6 +10,7 @@ export const ELEMENTS = {
 
 
    //form
+   formRange: 'modal-content-range',
 
 
 }
