@@ -14,7 +14,7 @@ describe ('Validar Carrinho', () => {
         Carrinho.acessarProdutocombo();
         Carrinho.inserirProdutocarrinhocombo(); 
     });
-    it.only('Acessar um carrinho com sucesso range', () => {
+    it('Acessar um carrinho com sucesso range', () => {
         //Acessando produto
         Carrinho.acessarProdutorange();
         Carrinho.inserirProdutocarrinhorange(); 
